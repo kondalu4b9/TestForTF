@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    
+    - name: display name
+      run: echo hello world
 
     - name: Install Terraform
       env:
