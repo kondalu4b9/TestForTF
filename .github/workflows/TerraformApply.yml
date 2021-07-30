@@ -10,7 +10,8 @@ jobs:
     
     - name: display name
       run: echo hello world
-
+    - name: Terraform version
+      run: terraform -v
    # - name: Install Terraform
      # env:
   #       TERRAFORM_VERSION: "0.12.15"
