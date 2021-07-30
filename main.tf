@@ -13,7 +13,7 @@ terraform {
 # Download any stable version in AWS provider of 2.36.0 or higher in 2.36 train
 provider "aws" {
   region  = "us-east-1"
-  version = "~> 3"
+  version = "~> 2.36.0"
 }
 
 
@@ -29,7 +29,7 @@ module "bootstrap" {
   aws_iam_policy_permits_name = "GitHubActionsIamPolicyPermits"
   aws_iam_policy_assume_name  = "GitHubActionsIamPolicyAssume"
 }
-*/
+
 # Build the VPC
 resource "aws_vpc" "vpc" {
   cidr_block           = "10.1.0.0/16"
@@ -40,6 +40,7 @@ resource "aws_vpc" "vpc" {
     Terraform = "true"
   }
 }
+*/
 /*
 # Build route table 1
 resource "aws_route_table" "route_table1" {
